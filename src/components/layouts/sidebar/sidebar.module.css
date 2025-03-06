@@ -1,0 +1,55 @@
+.sidebar {
+  width: 15%;
+  height: 100vh; /* ビューポートの高さいっぱいに */
+  position: sticky; /* 固定 */
+  top: 0;
+  left: 0;
+  z-index: 100;
+  color: white;
+  border-right: 1px solid #333;
+  overflow-y: auto; /* 縦方向のスクロールを有効に */
+}
+
+.sidebarTitle {
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 10px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.link {
+  font-size: 18px;
+  font-weight: 100;
+  /* 横幅一杯まで広げる */
+  width: 100%;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  margin-top: 0; /* マージン削除 */
+  padding: 2px 0; /* 少しだけ内部の余白を残す */
+}
+
+.link:hover {
+  background-color: slategray;
+  border-radius: 10px;
+}
+
+.mainLink {
+  font-size: 24px; /* サイズを小さく */
+  font-weight: 500;
+  /* 横幅一杯まで広げる */
+  width: 100%;
+  padding: 5px; /* パディングを減らす */
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  margin-top: 0.5rem; /* マージンを減らす */
+}
+
+.mainLink:hover {
+  background-color: slategray;
+  border-radius: 10px;
+}
