@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { SITE_TITLE } from "@/constants";
 
 export default function HomePage() {
@@ -6,4 +7,10 @@ export default function HomePage() {
       <h1>{SITE_TITLE}</h1>
     </div>
   );
+=======
+import style from "./page.module.css";
+
+export default function HomePage() {
+  return <div className={style.container}></div>;
+>>>>>>> origin
 }

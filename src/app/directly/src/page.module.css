@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content {
+  width: 100%;
+  padding: 0 20px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.content p {
+  margin-bottom: 15px;
+}
+
+.main {
+  padding-left: 20px;
+}
+
+.precautions {
+  color: red;
+}
+
+.head {
+  font-size: 40px;
+}

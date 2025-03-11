@@ -1,4 +1,3 @@
-import React from "react";
 import style from "./sidebar.module.css";
 import Link from "next/link";
 
@@ -52,7 +51,7 @@ const Sidebar = () => {
           <br />
           <div>
             <Link href={"/namingConvention/variable"} className={style.link}>
-              変数
+              変数・定数
             </Link>
             <br />
             <Link href={"/namingConvention/function"} className={style.link}>
@@ -82,6 +81,12 @@ const Sidebar = () => {
           </div>
         </div>
         <div>
+          <Link href={"/cookie-clicker"} className={style.mainLink}>
+            クッキークリッカー
+          </Link>
+          <br />
+        </div>
+        <div>
           <Link href={"/github"} className={style.mainLink}>
             Git Hub
           </Link>
@@ -91,12 +96,16 @@ const Sidebar = () => {
               clone
             </Link>
             <br />
-            <Link href={"/layout/sidebar"} className={style.link}>
-              サイドバー
+          </div>
+          <div>
+            <Link href={"/github/commit"} className={style.link}>
+              commit
             </Link>
             <br />
-            <Link href={"/layout/footer"} className={style.link}>
-              フッター
+          </div>
+          <div>
+            <Link href={"/github/pullRequest"} className={style.link}>
+              pullRequest
             </Link>
             <br />
           </div>
