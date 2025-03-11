@@ -6,7 +6,7 @@ export default function Page() {
     <>
       <div className={style.mainContainer}>
         <div className={style.headSentence}>
-          <Header props={"3PRO 2025"} />
+          <Header text={"3PRO 2025"} />
         </div>
         <div className={style.mainSentence}>
           <p>

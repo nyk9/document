@@ -6,4 +6,4 @@ export default function HomePage() {
       <h1>{SITE_TITLE}</h1>
     </div>
   );
-import style from "./page.module.css";
+}
