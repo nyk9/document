@@ -13,25 +13,12 @@ export default function Page() {
   return (
     <div className={style.container}>
       <Suspense fallback={<SkeletonHeader />}>
-        <DelayedHeader />
+        <Header text="constants" />
       </Suspense>
 
       <Suspense fallback={<SkeletonText />}>
         <DelayedContent />
       </Suspense>
-    </div>
-  );
-}
-
-// 1秒遅延するヘッダーコンポーネント
-async function DelayedHeader() {
-  // 重要: 実際のデータフェッチをシミュレート
-  const data = await fetchWithDelay(1000, { title: "constants" });
-
-  return (
-    <div className={style.title}>
-      <header>{data.title}</header>
-      <Header props={data.title} />
     </div>
   );
 }
@@ -80,19 +67,4 @@ async function DelayedContent() {
       </div>
     </div>
   );
-}
-
-// 意図的な遅延付きのフェッチ関数
-async function fetchWithDelay(ms: number, data: FetchProps) {
-  // 重要: これは fetch のパターンを使うことで Next.js の
-  // ストリーミング SSR 機能を正しくトリガーする
-  // 単なる setTimeout よりもこのパターンの方が良い
-  await new Promise((resolve) => setTimeout(resolve, ms));
-  return data;
-}
-
-interface FetchProps {
-  title?: string;
-  heading?: string;
-  description?: string;
 }
