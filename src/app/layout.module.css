@@ -1,0 +1,11 @@
+.flex {
+  display: flex;
+  height: 100vh;
+}
+
+.children {
+  /* 正面寄せにする */
+  justify-content: center;
+  /* 縦方向に中央寄せにする */
+  align-items: center;
+}
