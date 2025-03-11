@@ -1,0 +1,14 @@
+.header {
+  /* 中央寄せにする */
+  text-align: center;
+  /* 背景色を指定 */
+  background-color: #333;
+  /* 文字色を指定 */
+  color: white;
+  /* 文字の大きさを大きくする */
+  font-size: 5rem;
+  /* 幅を調整して中央寄せを確実にする */
+  width: 100%;
+  /* 角を丸める */
+  border-radius: 8px;
+}
