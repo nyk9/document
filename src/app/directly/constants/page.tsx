@@ -57,11 +57,15 @@ async function DelayedContent() {
           />
         </div>
         <p className={style.precautions}>
-          ③ 注意点：定数は<Tooltip text="※大文字とアンダースコア">スネークケース</Tooltip>で命名するのが一般的です。<br />
+          ③ 注意点：定数は
+          <Tooltip text="※大文字とアンダースコア">スネークケース</Tooltip>
+          で命名するのが一般的です。
+          <br />
           例: API_URL, SITE_TITLE, ITEMS_PER_PAGE
         </p>
         <p>
-          ④ プロジェクト全体で使用する定数を一元管理することで、変更が必要な場合に
+          ④
+          プロジェクト全体で使用する定数を一元管理することで、変更が必要な場合に
           一箇所だけを修正すれば良くなり、メンテナンス性が向上します。
         </p>
       </div>

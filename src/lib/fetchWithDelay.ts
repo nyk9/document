@@ -8,7 +8,6 @@
  * @returns data {string} - 遅延後の文字列
  */
 export async function fetchWithDelay(ms: number, data: FetchProps) {
-  
   await new Promise((resolve) => setTimeout(resolve, ms));
   return data;
 }

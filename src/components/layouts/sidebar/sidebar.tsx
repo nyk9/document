@@ -8,6 +8,9 @@ const Sidebar = () => {
         <Link href={"/"} className={style.sidebarTitle}>
           Home
         </Link>
+        <Link href={"/cookie"} className={style.mainLink}>
+          クッキー
+        </Link>
         <div>
           <Link href={"/directly"} className={style.mainLink}>
             ディレクトリ
